@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Speechix Remote</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_remote_panel">RemotePanelActivity</string>
+    <string name="sign_out">Sign out</string>
+    <string name="err_email">Invalid Email</string>
+    <string name="err_password">Password Required</string>
+    <string name="help">Help</string>
+    <string name="privacy_policy">Privacy Policy</string>
+</resources>

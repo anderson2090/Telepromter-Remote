@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_grey_terrazzo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".remote.RemotePanelActivity"
+    tools:showIn="@layout/activity_remote_panel">
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dark_grey_terrazzo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+
+        <Button
+            android:id="@+id/play_button"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_play_red"
+            android:text="Play"
+            android:textSize="0sp" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/up_ripple"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/up_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_green_up" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+
+        android:id="@+id/increase_font_ripple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/increase_font_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/ic_green_plus" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/increase_speed_ripple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/increase_speed_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/ic_blue_plus" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+
+        android:id="@+id/down_ripple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999999"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/down_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/ic_green_down" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+
+        android:id="@+id/decrease_font_ripple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/decrease_font_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/ic_green_minus" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/decrease_speed_ripple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/dark_grey_terrazzo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleBackground="#FFFFFF"
+        app:mrl_rippleColor="#ff0000"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDimension="10dp"
+        app:mrl_rippleDuration="350"
+        app:mrl_rippleFadeDuration="75"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleRoundedCorners="100dp">
+
+        <Button
+            android:id="@+id/decrease_speed_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/ic_blue_minus" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
